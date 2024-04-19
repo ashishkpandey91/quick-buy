@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>quick-buy</title>
-    <link rel="stylesheet" href="./input.css">
-</head>
-<body>
-    <h1 class="text-black-500">Ashish Kumar Pandey</h1>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body class="font-Poppins">
+    <div class="m-4">
+      <nav class="">
+        <div class="flex items-center justify-between text-black">
+          <!-- logo and menu icon -->
+          <div class="flex align-middle">
+            <img
+              class="md:hidden"
+              id="menu-btn"
+              src="./img/bars-staggered.png"
+              alt="menu"
+              width="28px"
+            />
+            <h1 class="text-2xl ml-3 font-bold">ShopVerse</h1>
+          </div>
+
+          <div
+            id="mobileNav"
+            class="bg-black bg-opacity-35 absolute w-screen top-0 left-0 h-screen z-50 -translate-x-full transition-all ease-linear duration-3duration-30000"
+          >
+            <ul class="pt-10 flex flex-col gap-4 bg-white w-3/4 h-screen pl-4">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Help</a></li>
+              <i
+                class="fa-solid fa-xmark absolute top-6 left-60 text-2xl px-2 hover:bg-gray-300 rounded-md"
+              ></i>
+            </ul>
+          </div>
+
+          <!-- shoping icons -->
+          <div class="">
+            <i class="fa-regular fa-heart text-2xl mx-3"></i>
+            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+          </div>
+        </div>
+
+        <!-- search -->
+        <div class="bg-gray-200 px-2 py-0 rounded-full mt-3 flex items-center">
+          <i class="fa-solid fa-magnifying-glass text-2xl px-3 py-2"></i>
+          <input
+            type="text"
+            name="srh"
+            id=""
+            class="outline-none text-xl bg-transparent w-full"
+            placeholder="Search for item"
+          />
+        </div>
+      </nav>
+    </div>
+
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
