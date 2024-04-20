@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="./input.css" />
   </head>
   <body class="font-Poppins">
-    <div class="m-4">
+    <div class="m-4 px-2">
       <nav class="">
-        <div class="flex items-center justify-between text-black">
+        <div class="flex items-center justify-between md:justify-between text-black">
           <!-- logo and menu icon -->
           <div class="flex align-middle">
             <img
@@ -32,20 +32,22 @@
               alt="menu"
               width="28px"
             />
-            <h1 class="text-2xl ml-3 font-bold">ShopVerse</h1>
+            <h1 class="text-2xl ml-3 font-bold md:text-3xl select-none cursor-pointer"><a href="./index.html"></a>ShopVerse</h1>
           </div>
 
           <div
             id="mobileNav"
-            class="bg-black bg-opacity-35 absolute w-screen top-0 left-0 h-screen z-50 -translate-x-full transition-all ease-linear duration-3duration-30000"
+            class="bg-black md:bg-transparent bg-opacity-35  absolute md:relative w-screen md:w-fit top-0 left-0 h-screen md:h-fit z-50 -translate-x-full md:translate-x-0 md:transition-none transition-all ease-linear duration-300 md:mr-20 md:ml-2"
           >
-            <ul class="pt-10 flex flex-col gap-4 bg-white w-3/4 h-screen pl-4">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Categories</a></li>
-              <li><a href="#">Help</a></li>
+            <ul
+              class="pt-10 md:pt-0 flex flex-col md:flex-row gap-4 md:gap-10 bg-white w-3/4 md:w-auto h-screen md:h-auto"
+            >
+              <li><a class="md:text-xl select-none" href="#">About</a></li>
+              <li><a class="md:text-xl select-none" href="#">Shop</a></li>
+              <li><a class="md:text-xl select-none" href="#">Categories</a></li>
+              <li><a class="md:text-xl select-none" href="#">Help</a></li>
               <i
-                class="fa-solid fa-xmark absolute top-6 left-60 text-2xl px-2 hover:bg-gray-300 rounded-md"
+                class="fa-solid fa-xmark absolute top-6 left-60 text-2xl px-2 hover:bg-gray-300 rounded-md md:hidden"
               ></i>
             </ul>
           </div>
@@ -54,17 +56,22 @@
           <div class="">
             <i class="fa-regular fa-heart text-2xl mx-3"></i>
             <i class="fa-solid fa-cart-shopping text-2xl"></i>
+            <div
+              class="px-2 rounded-full bg-my-custom-color absolute top-1 right-3"
+            >
+              <span class="text-xs text-white">0</span>
+            </div>
           </div>
         </div>
 
         <!-- search -->
-        <div class="bg-gray-200 px-2 py-0 rounded-full mt-3 flex items-center">
-          <i class="fa-solid fa-magnifying-glass text-2xl px-3 py-2"></i>
+        <div class="bg-gray-200 px-2 py-0 rounded-full mt-3 flex items-center xl:absolute xl:top-0 xl:right-32">
+          <i class="fa-solid fa-magnifying-glass text-2xl px-3 py-2 "></i>
           <input
             type="text"
             name="srh"
             id=""
-            class="outline-none text-xl bg-transparent w-full"
+            class="outline-none text-xl xl:text-lg bg-transparent w-full"
             placeholder="Search for item"
           />
         </div>
