@@ -22,7 +22,9 @@
   <body class="font-Poppins">
     <div class="m-4 px-2">
       <nav class="">
-        <div class="flex items-center justify-between md:justify-between text-black">
+        <div
+          class="flex items-center justify-between md:justify-between text-black"
+        >
           <!-- logo and menu icon -->
           <div class="flex align-middle">
             <img
@@ -32,15 +34,19 @@
               alt="menu"
               width="28px"
             />
-            <h1 class="text-2xl ml-3 font-bold md:text-3xl select-none cursor-pointer"><a href="./index.html"></a>ShopVerse</h1>
+            <h1
+              class="text-2xl ml-3 font-bold md:text-3xl select-none cursor-pointer"
+            >
+              <a href="./index.html">ShopVerse</a>
+            </h1>
           </div>
 
           <div
             id="mobileNav"
-            class="bg-black md:bg-transparent bg-opacity-35  absolute md:relative w-screen md:w-fit top-0 left-0 h-screen md:h-fit z-50 -translate-x-full md:translate-x-0 md:transition-none transition-all ease-linear duration-300 md:mr-20 md:ml-2"
+            class="bg-black md:bg-transparent bg-opacity-35 absolute md:relative w-screen md:w-fit top-0 left-0 h-screen md:h-fit z-50 -translate-x-full md:translate-x-0 md:transition-none transition-all ease-linear duration-300 md:mr-20 md:ml-2"
           >
             <ul
-              class="pt-10 md:pt-0 flex flex-col md:flex-row gap-4 md:gap-10 bg-white w-3/4 md:w-auto h-screen md:h-auto"
+              class="pt-16 pl-6 md:pt-0 flex flex-col md:flex-row gap-4 md:gap-10 bg-white w-80 md:w-auto h-screen md:h-auto"
             >
               <li><a class="md:text-xl select-none" href="#">About</a></li>
               <li><a class="md:text-xl select-none" href="#">Shop</a></li>
@@ -65,8 +71,10 @@
         </div>
 
         <!-- search -->
-        <div class="bg-gray-200 px-2 py-0 rounded-full mt-3 flex items-center xl:absolute xl:top-0 xl:right-32">
-          <i class="fa-solid fa-magnifying-glass text-2xl px-3 py-2 "></i>
+        <div
+          class="bg-gray-200 px-2 py-0 rounded-full mt-3 flex items-center xl:absolute xl:top-0 xl:right-32"
+        >
+          <i class="fa-solid fa-magnifying-glass text-2xl px-3 py-2"></i>
           <input
             type="text"
             name="srh"
@@ -76,7 +84,100 @@
           />
         </div>
       </nav>
+      <!-- hero section -->
+
+      <div
+        class="w-full h-[500px] bg-cover my-10 rounded-lg bg-[url('./img/banner-1.png')] text-white flex items-center"
+      >
+        <div class="pl-4 w-auto sm:max-w-[50%]">
+          <h3 class="text-3xl">SALE UP TO 20% OFF</h3>
+          <h3 class="text-5xl font-extrabold my-6">Apple Watch Ultra 2</h3>
+          <p>
+            The most rugged and capable Apple Watch pushes the limits again.
+            Featuring the all-new S9 SiP.
+          </p>
+          <div class="mt-6 w-auto">
+            <button
+              class="bg-my-custom-color text-sm font-semibold py-2 px-3 rounded-md"
+            >
+              Shop Now
+            </button>
+            <button
+              class="ml-4 bg-white text-black text-sm font-semibold py-2 px-3 rounded-md"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- trending section -->
+
+    <section class="py-8 m-4 px-2">
+      <h3 class="text-4xl font-medium">Trending Categories</h3>
+      <div class="w-full overflow-x-auto no-scrollbar my-5">
+        <div class="flex justify-between gap-x-16 my-4 w-full min-w-max">
+          <div class="flex flex-col items-center justify-center">
+            <img src="./img/electronic.png" alt="" />
+            <h4 class="text-3xl font-semibold my-3">Electronics</h4>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./img/electronic.png" alt="" />
+            <h4 class="text-3xl font-semibold my-3">Jewelery</h4>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./img/electronic.png" alt="" />
+            <h4 class="text-3xl font-semibold my-3">Men‘s Clothing</h4>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./img/electronic.png" alt="" />
+            <h4 class="text-3xl font-semibold my-3">Women‘s Clothing</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 m-4 px-2">
+      <div>
+        <div
+          class="shadow-lg bg-gray-200 rounded-lg flex flex-col items-center gap-5 py-5 px-4 max-w-80"
+        >
+          <img
+            class="w-1/2 mix-blend-multiply"
+            src="./img/81fPKd-2AYL._AC_SL1500_.jpg"
+            alt=""
+          />
+          <div class="flex flex-col items-center">
+            <div class="my-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star text-yellow-500"></i>
+              <span>(120)</span>
+            </div>
+            <h2 class="text-center font-medium text-xl my-2">
+              Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+            </h2>
+            <p class="text-xl font-bold text-my-custom-color my-2">
+              ₹ 109.95
+              <del class="text-base text-gray-500 font-normal">₹ 146</del>
+            </p>
+          </div>
+          <div class="flex gap-4 items-center justify-center">
+            <i
+              class="fa-solid fa-cart-plus px-4 py-2 cursor-pointer hover:bg-gray-200 transition ease-linear text-sm bg-white shadow-sm shadow-gray-400 rounded-md"
+            ></i>
+            <button
+              class="bg-my-custom-color text-sm text-white font-semibold py-2 px-16 rounded-md shadow-sm"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./app.js"></script>
   </body>
