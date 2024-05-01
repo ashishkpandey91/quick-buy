@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <h2 class="text-center font-medium text-xl my-2">
                 ${response[i].title}
               </h2>
-              <p class="text-xl font-bold text-my-custom-color my-2">
+              <p class="text-xl font-bold text-orange-500 my-2">
                 ₹ ${response[i].price}
                 <del class="text-base text-gray-500 font-normal">₹  ${(
                   response[i].price + (response[i].price * 21/100)
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 class="fa-solid fa-cart-plus px-4 py-2 cursor-pointer hover:bg-gray-200 transition ease-linear text-sm bg-white shadow-sm shadow-gray-400 rounded-md"
               ></i>
               <button
-                class="bg-my-custom-color text-sm text-white font-semibold py-2 px-16  rounded-md shadow-sm"
+                class="bg-orange-500 text-sm text-white font-semibold py-2 px-16  rounded-md shadow-sm"
               >
                 Buy Now
               </button>
