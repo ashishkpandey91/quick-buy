@@ -14,11 +14,9 @@ crossNan.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   let products = document.querySelector("#products");
-  console.log(products);
   async function fetch_products(url) {
     let data = await fetch(url);
     let response = await data.json();
-    console.log();
 
     for (let i = 0; i < response.length; i++) {
       products.innerHTML += `<div
@@ -75,7 +73,3 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch_products("https://fakestoreapi.com/products");
 });
 
-ShopCart.addEventListener("click", function (e) {
-  let mainSection = document.querySelector("main");
-  mainSection.classList.toggle("hidden");
-})

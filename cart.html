@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>quick-buy</title>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body class="font-Poppins">
+    <div class="m-4 px-2">
+      <nav class="">
+        <div
+          class="flex items-center justify-between md:justify-between text-black"
+        >
+          <!-- logo and menu icon -->
+          <div class="flex align-middle">
+            <img
+              class="md:hidden"
+              id="menu-btn"
+              src="./img/bars-staggered.png"
+              alt="menu"
+              width="28px"
+            />
+            <h1
+              class="text-2xl ml-3 font-bold md:text-3xl select-none cursor-pointer"
+            >
+              <a href="./index.html">ShopVerse</a>
+            </h1>
+          </div>
+
+          <div
+            id="mobileNav"
+            class="bg-black md:bg-transparent bg-opacity-35 absolute md:relative w-screen md:w-fit top-0 left-0 h-screen md:h-fit z-50 -translate-x-full md:translate-x-0 md:transition-none transition-all ease-linear duration-300 md:mr-20 md:ml-2"
+          >
+            <ul
+              class="pt-16 pl-6 md:pt-0 flex flex-col md:flex-row gap-4 md:gap-10 bg-white w-80 md:w-auto h-screen md:h-auto"
+            >
+              <li><a class="md:text-xl select-none" href="#">About</a></li>
+              <li><a class="md:text-xl select-none" href="#">Shop</a></li>
+              <li><a class="md:text-xl select-none" href="#">Categories</a></li>
+              <li><a class="md:text-xl select-none" href="#">Help</a></li>
+              <i
+                class="fa-solid fa-xmark absolute top-6 left-60 text-2xl px-2 hover:bg-gray-300 rounded-md md:hidden"
+              ></i>
+            </ul>
+          </div>
+
+          <!-- shoping icons -->
+          <div class="">
+            <i class="fa-regular fa-heart text-2xl mx-3 cursor-pointer"></i>
+            <i
+              class="fa-solid fa-cart-shopping text-2xl cursor-pointer"
+              id="ShopCart"
+            ></i>
+            <div class="px-2 rounded-full bg-orange-500 absolute top-1 right-3">
+              <span class="text-xs text-white">0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- search -->
+        <div
+          class="bg-gray-200 px-2 py-0 rounded-full mt-3 flex items-center xl:absolute xl:top-0 xl:right-32"
+        >
+          <i class="fa-solid fa-magnifying-glass text-2xl px-3 py-2"></i>
+          <input
+            type="text"
+            name="srh"
+            id=""
+            class="outline-none text-xl xl:text-lg bg-transparent w-full"
+            placeholder="Search for item"
+          />
+        </div>
+      </nav>
+    </div>
+
+    <main class="mx-4 my-7 px-2 grid md:grid-cols-12 gap-3">
+      <div class="w-full flex flex-col gap-3 md:col-span-8 md:relative">
+        <h4 class="w-full bg-orange-500 text-white p-3 text-lg font-bold">
+          Your cart (1)
+        </h4>
+        <div class="bg-white shadow-sm shadow-gray-400 rounded-md">
+          <div class="flex items-start gap-4 p-3">
+            <div
+              class="bg-white shadow-sm shadow-gray-400 rounded-md w-20 px-3 py-3"
+            >
+              <img
+                class="mix-blend-multiply"
+                src="./img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col justify-start">
+              <h3 class="text-base font-semibold">Mens Cotton Jacket</h3>
+              <div class="flex items-center gap-2 text-sm">
+                <div class="flex gap-2 relative overflow-hidden">
+                  <i class="fa-regular fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star text-yellow-500"></i>
+                  <div
+                    class="absolute top-0 left-0 flex gap-2 overflow-hidden w-[50%]"
+                  >
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                  </div>
+                </div>
+                <span>(500)</span>
+              </div>
+              <h3 class="text-base font-semibold">₹ 55.99</h3>
+              <div class="flex items-center gap-3 my-3">
+                <p
+                  class="px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
+                >
+                  -
+                </p>
+                <p class="text-base font-semibold">2</p>
+                <p
+                  class="px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
+                >
+                  +
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex md:flex-col items-center justify-end md:absolute md:bottom-20  md:right-1 md:items-end md:justify-center gap-4 pr-7 pb-7">
+            <p
+              class="bg-white shadow-sm shadow-gray-400 text-sm font-semibold py-2 px-3 rounded-md w-28 cursor-pointer hover:bg-gray-100 transition ease-linear"
+            >
+              <i class="fa-solid fa-trash px-2"></i>Delete
+            </p>
+            <p
+              class="bg-orange-500 text-sm font-semibold py-2 px-3 rounded-md w-28 text-white cursor-pointer hover:bg-orange-600 transition ease-linear"
+            >
+              <i class="fa-solid fa-bolt px-2"></i>Buy Now
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-4 flex flex-col gap-3">
+        <div class="w-full bg-white shadow-sm shadow-gray-400 rounded-md p-4">
+            <h3 class="text-lg font-semibold my-3">Prices Details</h3>
+            <div class="flex items-center justify-between"><p>Price (2)</p><p>₹78.29</p></div>
+            <div class="flex items-center justify-between"><p>Discount</p><p class="text-green-600">- ₹0</p></div>
+            <div class="flex items-center justify-between"><p>Delivery Charge</p><p>₹40</p></div>
+            <div class="flex items-center justify-between py-3 border-y-2 border-dashed mt-3 "><p class="text-lg font-semibold">Total Amount</p><p class="text-lg font-semibold">₹118.29</p></div>
+        </div>
+        <div class="flex items-center justify-between w-full bg-white shadow-sm shadow-gray-400 rounded-md p-4">
+            <h3 class="text-lg font-bold">₹78.29</h3>
+            <button
+            class="bg-orange-500 text-sm text-white hover:bg-orange-600 font-semibold py-2 px-3 rounded-md"
+          >
+            Place Order
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="mx-4 my-8 px-2 flex flex-col sm:flex-row sm:justify-between items-center gap-3"
+    >
+      <div class="sm:flex sm:items-center sm:gap-10">
+        <div class="flex items-center gap-4 justify-center">
+          <i
+            class="fa-solid fa-layer-group bg-orange-500 p-3 text-xl text-white rounded-full"
+          ></i>
+          <h2 class="text-xl">ShopVerse</h2>
+        </div>
+        <p class="mt-3 sm:border-l-2 sm:pl-6 sm:py-2">
+          © 2024 ShopVerse
+          <a href="https://github.com/ashishpandey91">—@ashishpandey91</a>
+        </p>
+      </div>
+      <div class="text-2xl flex gap-4 items-center">
+        <i class="fa-brands fa-twitter cursor-pointer"></i>
+        <i class="fa-brands fa-facebook cursor-pointer"></i>
+        <i class="fa-brands fa-instagram cursor-pointer"></i>
+        <i class="fa-brands fa-linkedin cursor-pointer"></i>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
