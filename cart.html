@@ -93,80 +93,37 @@
         <h4 class="w-full bg-orange-500 text-white p-3 text-lg font-bold">
           Your cart (1)
         </h4>
-        <div class="bg-white shadow-sm shadow-gray-400 rounded-md">
-          <div class="flex items-start gap-4 p-3">
-            <div
-              class="bg-white shadow-sm shadow-gray-400 rounded-md w-20 px-3 py-3"
-            >
-              <img
-                class="mix-blend-multiply"
-                src="./img/81fPKd-2AYL._AC_SL1500_.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex flex-col justify-start">
-              <h3 class="text-base font-semibold">Mens Cotton Jacket</h3>
-              <div class="flex items-center gap-2 text-sm">
-                <div class="flex gap-2 relative overflow-hidden">
-                  <i class="fa-regular fa-star text-yellow-500"></i>
-                  <i class="fa-regular fa-star text-yellow-500"></i>
-                  <i class="fa-regular fa-star text-yellow-500"></i>
-                  <i class="fa-regular fa-star text-yellow-500"></i>
-                  <i class="fa-regular fa-star text-yellow-500"></i>
-                  <div
-                    class="absolute top-0 left-0 flex gap-2 overflow-hidden w-[50%]"
-                  >
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                  </div>
-                </div>
-                <span>(500)</span>
-              </div>
-              <h3 class="text-base font-semibold">₹ 55.99</h3>
-              <div class="flex items-center gap-3 my-3">
-                <p
-                  class="px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
-                >
-                  -
-                </p>
-                <p class="text-base font-semibold">2</p>
-                <p
-                  class="px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
-                >
-                  +
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="w-full flex md:flex-col items-center justify-end md:absolute md:bottom-20  md:right-1 md:items-end md:justify-center gap-4 pr-7 pb-7">
-            <p
-              class="bg-white shadow-sm shadow-gray-400 text-sm font-semibold py-2 px-3 rounded-md w-28 cursor-pointer hover:bg-gray-100 transition ease-linear"
-            >
-              <i class="fa-solid fa-trash px-2"></i>Delete
-            </p>
-            <p
-              class="bg-orange-500 text-sm font-semibold py-2 px-3 rounded-md w-28 text-white cursor-pointer hover:bg-orange-600 transition ease-linear"
-            >
-              <i class="fa-solid fa-bolt px-2"></i>Buy Now
-            </p>
-          </div>
-        </div>
+        <div id="cartParent">
+        </div> 
       </div>
       <div class="md:col-span-4 flex flex-col gap-3">
         <div class="w-full bg-white shadow-sm shadow-gray-400 rounded-md p-4">
-            <h3 class="text-lg font-semibold my-3">Prices Details</h3>
-            <div class="flex items-center justify-between"><p>Price (2)</p><p>₹78.29</p></div>
-            <div class="flex items-center justify-between"><p>Discount</p><p class="text-green-600">- ₹0</p></div>
-            <div class="flex items-center justify-between"><p>Delivery Charge</p><p>₹40</p></div>
-            <div class="flex items-center justify-between py-3 border-y-2 border-dashed mt-3 "><p class="text-lg font-semibold">Total Amount</p><p class="text-lg font-semibold">₹118.29</p></div>
+          <h3 class="text-lg font-semibold my-3">Prices Details</h3>
+          <div class="flex items-center justify-between">
+            <p>Price (2)</p>
+            <p>₹78.29</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>Discount</p>
+            <p class="text-green-600">- ₹0</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>Delivery Charge</p>
+            <p>₹40</p>
+          </div>
+          <div
+            class="flex items-center justify-between py-3 border-y-2 border-dashed mt-3"
+          >
+            <p class="text-lg font-semibold">Total Amount</p>
+            <p class="text-lg font-semibold">₹118.29</p>
+          </div>
         </div>
-        <div class="flex items-center justify-between w-full bg-white shadow-sm shadow-gray-400 rounded-md p-4">
-            <h3 class="text-lg font-bold">₹78.29</h3>
-            <button
+        <div
+          class="flex items-center justify-between w-full bg-white shadow-sm shadow-gray-400 rounded-md p-4"
+        >
+          <h3 class="text-lg font-bold">₹78.29</h3>
+          <button
             class="bg-orange-500 text-sm text-white hover:bg-orange-600 font-semibold py-2 px-3 rounded-md"
           >
             Place Order
@@ -197,6 +154,9 @@
         <i class="fa-brands fa-linkedin cursor-pointer"></i>
       </div>
     </footer>
-    <script src="./app.js"></script>
+    <!-- <script src="./script/allProduct.js"></script> -->
+    <script src="./script/common.js"></script>
+    <script src="./script/globalVar.js"></script>
+    <script src="./script/cart.js"></script>
   </body>
 </html>
