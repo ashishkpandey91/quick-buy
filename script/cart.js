@@ -36,7 +36,7 @@ function addToCart(product_id) {
     cart[positionThisProductInCart].quantity =
       cart[positionThisProductInCart].quantity + 1;
   }
-  console.log(cart);
+  // console.log(cart);
   addCartToHtml();
   addCartToMemory();
 }
@@ -109,8 +109,8 @@ function addCartToHtml() {
       <div
         class="w-full flex md:flex-col items-center justify-end md:relative  md:right-1 md:items-end md:justify-center gap-4 pr-7 pb-7"
       >
-        <p
-          class="bg-white shadow-sm shadow-gray-400 text-sm font-semibold py-2 px-3 rounded-md w-28 cursor-pointer hover:bg-gray-100 transition ease-linear"
+        <p id="deleteBtn"
+          class="deleteButton bg-white shadow-sm shadow-gray-400 text-sm font-semibold py-2 px-3 rounded-md w-28 cursor-pointer hover:bg-gray-100 transition ease-linear"
         >
           <i class="fa-solid fa-trash px-2"></i>Delete
         </p>
@@ -156,17 +156,22 @@ function addCartToMemory() {
 
 cartParent.addEventListener("click", function (event) {
   let positionClick = event.target;
+  let delProduct_id = positionClick.parentElement.parentElement.parentElement.dataset.id;
+
   if (
     positionClick.classList.contains("minus") ||
     positionClick.classList.contains("plus")
   ) {
-    let product_id =
+      let product_id =
       positionClick.parentElement.parentElement.parentElement.parentElement.parentElement.dataset.id;
       let type = 'minus';
       if ( positionClick.classList.contains("plus")) {
         type = 'plus'
       }
       changeQuantity(product_id, type);
+  }
+  if (positionClick.classList.contains("deleteButton")) {
+    removeItemFromCart(delProduct_id);
   }
 });
 
@@ -188,6 +193,13 @@ function changeQuantity(product_id, type) {
         break;
     }
   }
-  addCartToMemory();
   addCartToHtml();
+  addCartToMemory();
 };
+
+function removeItemFromCart(product_id) {
+  let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
+  cart.splice(positionItemInCart, 1);
+  addCartToHtml();
+  addCartToMemory();
+}
