@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./input.css" />
 </head>
 
-<body class="font-Poppins relative max-w-full overflow-x-hidden">
+<body class="font-Poppins relative min-w-full overflow-x-hidden">
   <div class="m-4 px-2">
     <nav class="">
       <div class="flex items-center justify-between md:justify-between text-black">
@@ -45,7 +45,7 @@
         <!-- shoping icons -->
         <div class="">
           <i class="fa-regular fa-heart text-2xl mx-3 cursor-pointer"></i>
-          <a href="#"><i class="fa-solid fa-cart-shopping text-2xl cursor-pointer" id="ShopCart"></i></a>
+          <i class="fa-solid fa-cart-shopping text-2xl cursor-pointer" id="ShopCart"></i>
           <div class="px-2 rounded-full bg-orange-500 absolute -top-2  right-3">
             <span id="iconCartSpan" class="text-xs text-white">0</span>
           </div>
@@ -153,9 +153,9 @@
   <!-- product cart page -->
 
   <main id="cartMainSection"
-    class="mx-3 my-7 px-2 grid gap-3 bg-white absolute top-20 xl:top-16 -right-3 z-40 w-screen transition-all ease-linear duration-300 translate-x-full lg:w-1/2">
+    class="mx-3 my-7 px-2 grid gap-3 bg-gray-200 overflow-y-scroll translate-x-full h-[600px] sm:h-96 py-5 fixed top-24 xl:top-16 -right-3 z-40 w-screen transition-all ease-linear duration-300  lg:w-1/2">
     <div class="w-auto flex flex-col gap-3">
-      <h4 id="yourCart" class="w-auto bg-orange-500 text-white p-3 text-lg font-bold">
+      <h4 id="yourCart" class="w-auto sticky z-40 -top-5 bg-orange-500 text-white p-3 text-lg font-bold">
         Your cart (0)
       </h4>
 
@@ -164,7 +164,6 @@
         <!-- cart products -->
 
       </div>
-    </div>
     </div>
     <div class="flex flex-col gap-3">
       <div class="w-full bg-white shadow-sm shadow-gray-400 rounded-md p-4">
