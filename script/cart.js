@@ -92,13 +92,13 @@ function addCartToHtml() {
           }</h3>
           <div class="flex items-center gap-3 my-3">
             <p
-              class=" minus px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
+              class=" minus select-none  px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
             >
               -
             </p>
             <p class="text-base font-semibold">${cart.quantity}</p>
             <p
-              class=" plus px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
+              class=" plus select-none  px-3 py-1 text-base font-semibold cursor-pointer hover:bg-gray-200 transition ease-linear bg-white shadow-sm shadow-gray-400 rounded-md"
             >
               +
             </p>
@@ -110,7 +110,7 @@ function addCartToHtml() {
         class="w-full flex md:flex-col items-center justify-end md:relative  md:right-1 md:items-end md:justify-center gap-4 pr-7 pb-7"
       >
         <p id="deleteBtn"
-          class="deleteButton bg-white shadow-sm shadow-gray-400 text-sm font-semibold py-2 px-3 rounded-md w-28 cursor-pointer hover:bg-gray-100 transition ease-linear"
+          class="deleteButton bg-white select-none  shadow-sm shadow-gray-400 text-sm font-semibold py-2 px-3 rounded-md w-28 cursor-pointer hover:bg-gray-100 transition ease-linear"
         >
           <i class="fa-solid fa-trash px-2"></i>Delete
         </p>
@@ -150,6 +150,7 @@ function addCartToHtml() {
     ).innerHTML = `₹${(totalPrice + 40 - ((totalPrice * 21) / 100)).toFixed(2)}`);
   }
 };
+
 function addCartToMemory() {
   localStorage.setItem("carts", JSON.stringify(cart));
 }
