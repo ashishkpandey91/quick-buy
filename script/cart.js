@@ -1,9 +1,9 @@
 let iconCartSpan = document.querySelector("#iconCartSpan");
 let cart = [];
 setTimeout(() => {
-  console.log("all product ", window.ALL_PRODUCTS);
+  // console.log("all product ", window.ALL_PRODUCTS);
   let products = document.querySelector("#products");
-  console.log(products);
+  // console.log(products);
   //event listener
   products.addEventListener("click", function (event) {
     let positionClick = event.target;
